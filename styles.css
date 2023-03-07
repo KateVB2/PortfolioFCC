@@ -1,0 +1,196 @@
+:root {
+  --main-white: #fff;
+  --main-sun: #f6c453;
+  --main-cream: #fefbe9;
+  --main-orange: #f0a04b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: var(--main-white);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--main-sun);
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2.5rem;
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  color: var(--main-white);
+  font-size: 22px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: var(--main-orange);
+  background: var(--main-cream);
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: var(--main-cream);
+  color: var(--main-orange);
+  width: 100%;
+  height: 70vh;
+  padding-top: 90px;
+}
+
+.welcome-section > h1 {
+  font-size: 50px;
+  padding: 80px 50px 25px 50px;
+}
+
+.welcome-section > h2 {
+  font-size: 30px;
+  padding: 0px 10px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  color: var(--main-sun);
+  border-bottom: 1px solid var(--main-sun);
+}
+
+.intro {
+  font-size: 25px;
+  padding: 20px 50px;
+  margin-bottom: 80px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.courses-section {
+  text-align: center;
+  padding: 50px;
+  color: var(--main-cream);
+  background: var(--main-sun);
+}
+
+.header-courses {
+  text-align: right;
+  padding-top: 75px;
+  padding-right: 10px;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+.ul-courses {
+  text-align: left;
+  font-size: 20px;
+  list-style: square;
+  margin-top: 50px;
+}
+
+.course-list {
+  padding-bottom: 10px;
+}
+
+.course-name {
+  font-weight: bold;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 50px;
+  color: var(--main-sun);
+  background: var(--main-cream);
+}
+
+.header-projects {
+  font-size: 30px;
+  padding: 20px 0px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: var(--main-sun);
+}
+
+.project-name {
+  font-size: 22px;
+  padding: 20px 10px;
+  color: var(--main-orange);
+}
+
+.project-name:hover {
+  color: var(--main-cream);
+  background-color: var(--main-sun);
+}
+
+.grid > a {
+  text-decoration: none;
+}
+
+.image-project {
+  max-height: 300px;
+  border-right: 3px solid var(--main-sun);
+  border-bottom: 3px solid var(--main-sun);
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px;
+  color: var(--main-cream);
+  background: var(--main-sun);
+}
+
+.header-contact {
+  font-size: 30px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+
+.contact-details {
+  color: var(--main-cream);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.contact-details:hover {
+  font-size: 25px;
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 18px;
+  }
+}
